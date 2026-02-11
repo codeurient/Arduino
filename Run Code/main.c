@@ -1,11 +1,14 @@
 #include <stdio.h>
 
-int topla(int a, int b) {
-    return a + b;
+int x = 100;  // global
+
+void test() {
+    int y = 20;  // local
+    printf("%d\n", y);
 }
 
-
 int main() {
-    printf("Netice: %d\n", topla(3, 7));  
+    test();
+    printf("%d\n", x);
     return 0;
 }
